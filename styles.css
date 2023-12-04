@@ -1,0 +1,151 @@
+body{
+    background-color: rgb(199, 238, 199) ;
+}
+*{
+    margin:0;
+    padding:0;
+
+}
+.picture img{
+    height:40px;
+    padding:0 0.5rem;
+    
+}
+.picture{
+    display:flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    color:whitesmoke;
+
+
+}
+nav ul{
+    display:flex;
+    align-items: center;
+    color:aqua;
+    list-style-type: none;
+    background-color: black;
+    height:48px;
+}
+nav{
+font-family: Arial, Helvetica, sans-serif;
+
+
+}
+nav ul li{
+    
+    padding:0 15px; 
+    /*  top bottom then left right
+    Default: top,right,bottom,left */
+}
+.container{
+     background-color: black;
+     color:white;
+     min-height:65vh; 
+     display: flex;
+     margin: 20px auto; 
+     width: 70%;
+     border-radius: 15px;
+     padding: 15px;
+     /* background-image: url('bright-musical-background.jpg'); */
+     /* background-image: url('dj-power-color-spots-generative-ai.jpg'); */
+     /* In this vh(viewport height) means 75 percent of entire screen no matter div inside div
+     It will always be browser's entire screen  */
+}
+.banner{
+    width:60%;
+
+}
+.banner img{
+    height:70vh;
+    width:100%;
+}
+.bottom{
+    position: sticky;
+    /*  It will stick while scrolling to */
+    background-color: black;
+    color:white;
+    height:112px;
+    bottom: 0;
+     /* text-align: center;  Applies only on div elements*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+.startTime{
+    position: absolute;
+    top: 30px;
+    left: 172px;
+}
+.endTime{
+    position: absolute;
+    top:30px;
+    right:172px;
+}
+
+.icons i{
+    margin-top:20px;
+    cursor: pointer;
+}
+/* .icons{
+    text-align: center; We can do this also
+
+} */
+
+#lengthOfSong{
+     width:80vw;
+     cursor:pointer;
+     /* text-align: center;  */
+     /*  text-align: center; will always work on div containing elements */
+}
+.songItem img{
+    height:48px;
+    width:70px;
+    padding-right:10px;
+    /* padding:3px 0; */
+    /* margin: 5px 0; */
+    border-radius: 70px;
+
+}
+
+.songItem{
+    height:50px;
+    display:flex;
+    /* flex-direction: column; */
+    background-color: antiquewhite;
+    color:black;
+    width:100%;
+    border-radius: 10px;
+    margin:20px 0;
+
+    justify-content: space-between;
+    align-items: center;
+}
+.time{
+    margin:0 20px;
+    cursor: pointer;
+}
+.songs{
+    width:40%;
+}
+.songItemContainer{
+    margin-top:20px;
+    width:100%;
+}
+.songInfo{
+    display: flex;
+ position: absolute;
+ justify-content: center;
+ align-items: center;
+ left:10vw;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 1s ease-in;
+
+}
